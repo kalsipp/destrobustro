@@ -1,0 +1,20 @@
+#include "game.hpp"
+
+Game::Game(){
+  m_logger = new Logger("game");
+  m_logger->log("Main gameloop created.");
+  m_ui = new Ui();
+}
+
+Game::~Game(){
+  delete m_logger;
+  delete m_ui;
+}
+void Game::mainloop(){
+  m_logger->log("Running mainloop.");
+  while(true){
+    
+  }
+
+  m_logger->log("Mainloop done.");
+}

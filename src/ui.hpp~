@@ -1,0 +1,13 @@
+#include <ncurses.h>
+//#include <string>
+
+#include "logger.hpp"
+
+class Ui{
+public:
+  Ui();
+  ~Ui();
+  char get_input();
+private:
+  Logger * m_logger;
+};

@@ -1,0 +1,22 @@
+#include "ui.hpp"
+
+Ui::Ui(){
+  m_logger = new Logger("Ui");
+  m_logger->log("Ui created.");
+  initscr(); //Start curses mode 
+  raw(); //Line buffering disabled
+  keypad(stdscr, true); //Get f1, f2 etc..
+  noecho();
+  refresh();
+}
+
+Ui::~Ui(){
+  m_logger->log("Ui deleted.");
+  endwin();
+  delete m_logger;
+}
+
+
+char Ui::get_input(){
+  return getch();
+}
