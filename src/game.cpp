@@ -7,28 +7,31 @@ Game::Game(){
 }
 
 Game::~Game(){
+  m_logger->log("Main gameloop killed.");
   delete m_logger;
   delete m_ui;
 }
 void Game::mainloop(){
   m_logger->log("Running mainloop.");
   bool game_running = true;
-  m_ui->create_window(0, 0, 20, 20, "thing");
-  m_ui->print_window("Hello", "thing");
+  m_ui->create_window(10, 10, 20, 20, "thing");
+  //m_ui->create_window(10, 10, 20, 20, "that");
+  for(int i = 0; i < 100; ++i){
+    m_ui->print_line("Helloölkajsdöl", "thing");
+  }
   while(game_running){
-    
     char input =  m_ui->get_input();
 
-    if(input == 'q') break; //If all else fails
+    if(input == 'p') break; //If all else fails
 
     m_logger->log("Raw input: " + input);
     
     input = tolower(input);
-
+    
     m_logger->log("Tolower input " + input);
 
-    if(input == 10 || input == KEY_F(2)){
-      game_running = false;
+    if(input == 'q' ){
+        game_running = false;
     }else if(input == 'w'){
       std::cout << "HELL YES" << std::endl;
     }else if(input == 'W'){

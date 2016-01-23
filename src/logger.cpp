@@ -6,7 +6,7 @@ Logger::Logger(const std::string & filename){
 
 	m_start_time = std::chrono::system_clock::now();
 
-	m_filename = "logs/" + filename;
+	m_filename = "logs/" + filename + ".log";
 	remove(m_filename.c_str());
 
 }
