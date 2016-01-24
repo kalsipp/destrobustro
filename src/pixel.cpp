@@ -1,0 +1,16 @@
+#include "pixel.hpp"
+#include <string>
+
+Pixel::Pixel(){
+  s = "  \033[48m";
+}
+
+Pixel::Pixel(int c){
+  s = "\033[48;5;" + std::to_string(c) + "m  " + "\033[0m";
+}
+Pixel::Pixel(std::string _s){
+  s = _s + "\033[0m";
+}
+std::string Pixel::get_str()const{
+  return s;
+}

@@ -5,7 +5,7 @@
 
 #include "logger.hpp"
 #include "ui.hpp"
-
+#include "pixel.hpp"
 class Game{
 public:
 Game();
