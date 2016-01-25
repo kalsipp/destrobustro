@@ -1,15 +1,19 @@
 #include "ui.hpp"
-
+#include <cassert>
 Ui::Ui(){
   m_logger = new Logger("Ui");
   m_logger->log("Ui created.");
   initscr(); //Start curses mode
-  //start_color();
-  //init_pair(1, COLOR_RED, COLOR_BLACK);
-  //attron(COLOR_PAIR(1));
+  start_color();
+  //use_default_colors();
+  refresh();
+  //if(!has_colors())assert(false);
+  init_pair(1, COLOR_RED, COLOR_BLUE);
+  attron(COLOR_PAIR(1));
+  
   //int c = colors();
   //m_logger->log("I can support " + std::to_string(c)); 
-  raw(); //Line buffering disabled
+  //raw(); //Line buffering disabled
   keypad(stdscr, true); //Get f1, f2 etc..
   cbreak();
   noecho();
@@ -17,7 +21,6 @@ Ui::Ui(){
 }
 
 Ui::~Ui(){
-  attroff(COLOR_PAIR(1));
   m_logger->log("Ui deleted.");
   for(auto i = m_windows.begin(); i != m_windows.end(); ++i){
     delwin((*i).second);
@@ -47,9 +50,22 @@ void Ui::create_window(int px, int py, int sizex, int sizey, std::string id){
   m_windows[id] = win;
 }
 
+void Ui::create_window_empty(int px, int py, int sizex, int sizey, std::string id){
+  if(m_windows.count(id) != 0){
+    wrefresh(m_windows[id]);
+    delwin(m_windows[id]);
+  }
+  WINDOW * win;
+  win = newwin(sizey, sizex, py, px);
+  box(win, 0, 0);
+  wrefresh(win);
+  m_windows[id] = win;
+}
+
 
 void Ui::print_line(std::string text, std::string id){
   if(m_windows.count(id+m_scrollending) != 0){
+    wbkgd(m_windows[id+m_scrollending], COLOR_PAIR(1));
     scroll(m_windows[id+m_scrollending]);
     int x_max = 0;
     int y_max = 0;
