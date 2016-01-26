@@ -25,18 +25,18 @@ void Game::init(){
   int infopx = 2;
   int infosizex = m_cols-4;
   Windowinv winv(m_ui, infopx, infopy, infosizex, infosizey);
-  //  m_ui->create_window(infopx, infopy, infosizex, infosizey, m_infoid);
 
   int inventorysizex = 20; 
   int inventorypx = m_cols-inventorysizex-2;
   int inventorypy = 1;
   int inventorysizey = m_rows-infosizey-2;
   Windowinfo winfo(m_ui, inventorypx, inventorypy, inventorysizex, inventorysizey);
-  //m_ui->create_window(inventorypx, inventorypy, inventorysizex, inventorysizey, m_inventoryid);
-  //int imagepx = 2;
-  //int imagepy = 1;
-  //int imagesizex = m_cols-inventorysizex-6;
-  //int imagesizey = m_rows-infosizey-2;
+  int imagepx = 2;
+  int imagepy = 1;
+  int imagesizex = m_cols-inventorysizex-6;
+  int imagesizey = m_rows-infosizey-2;
+  Windowpic winpic(m_ui, imagepx, imagepy, imagesizex, imagesizey);
+  winpic.print();
   //m_ui->create_window(imagepx, imagepy, imagesizex, imagesizey, "image");
   m_logger->log("init done");
 }

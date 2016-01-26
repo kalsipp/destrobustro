@@ -90,7 +90,10 @@ void Ui::create_window_scroll(int px, int py, int sizex, int sizey, std::string 
 
 void Ui::print_line_at(int px, int py, std::string text, std::string id){
   if(m_windows.count(id) != 0){
-    mvwprintw(m_windows[id], px, py, text.c_str());
+    m_logger->log("Attemping to print at px:" + std::to_string(px)+ " py:"+ std::to_string(py) + ".");
+    int k = mvwprintw(m_windows[id], py, px, text.c_str());
+    wrefresh(m_windows[id]);
+    m_logger->log(std::to_string(k));
   }else{
     m_logger->log("In print_line_at no window named " + id + "found.");
   }

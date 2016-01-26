@@ -11,6 +11,7 @@
 #include "pixel.hpp"
 #include "windowinfo.hpp"
 #include "windowinv.hpp"
+#include "windowpic.hpp"
 class Game{
 public:
   Game();
