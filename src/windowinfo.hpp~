@@ -1,0 +1,6 @@
+
+class Windowinfo{
+  Windowinfo();
+  ~Windowinfo();
+
+};

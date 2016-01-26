@@ -1,3 +1,4 @@
+#pragma once
 #include <ncurses.h>
 #include <map>
 #include "logger.hpp"
@@ -9,7 +10,9 @@ public:
   char get_input();
   void create_window(int px, int py, int sizex, int sizey, std::string id);
   void create_window_empty(int px, int py, int sizex, int sizey, std::string id);
+  void create_window_scroll(int px, int py, int sizex, int sizey, std::string id);
   void print_line(std::string text, std::string id);
+  void print_line_at(int px, int py, std::string text, std::string id);
   void print_pos(std::string text, std::string id, int px, int py);
 private:
   Logger * m_logger;

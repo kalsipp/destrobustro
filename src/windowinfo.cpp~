@@ -1,0 +1,7 @@
+#include "windowinfo.hpp"
+
+Windowinfo::Windowinfo(){
+}
+
+Windowinfo::~Windowinfo(){
+}

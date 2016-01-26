@@ -24,25 +24,26 @@ void Game::init(){
   int infopy = m_rows-infosizey-1;
   int infopx = 2;
   int infosizex = m_cols-4;
-  m_ui->create_window(infopx, infopy, infosizex, infosizey, m_infoid);
+  Windowinv winv(m_ui, infopx, infopy, infosizex, infosizey);
+  //  m_ui->create_window(infopx, infopy, infosizex, infosizey, m_infoid);
 
   int inventorysizex = 20; 
   int inventorypx = m_cols-inventorysizex-2;
   int inventorypy = 1;
   int inventorysizey = m_rows-infosizey-2;
-  m_ui->create_window(inventorypx, inventorypy, inventorysizex, inventorysizey, m_inventoryid);
-  int imagepx = 2;
-  int imagepy = 1;
-  int imagesizex = m_cols-inventorysizex-6;
-  int imagesizey = m_rows-infosizey-2;
-  m_ui->create_window(imagepx, imagepy, imagesizex, imagesizey, "image");
+  Windowinfo winfo(m_ui, inventorypx, inventorypy, inventorysizex, inventorysizey);
+  //m_ui->create_window(inventorypx, inventorypy, inventorysizex, inventorysizey, m_inventoryid);
+  //int imagepx = 2;
+  //int imagepy = 1;
+  //int imagesizex = m_cols-inventorysizex-6;
+  //int imagesizey = m_rows-infosizey-2;
+  //m_ui->create_window(imagepx, imagepy, imagesizex, imagesizey, "image");
   m_logger->log("init done");
 }
 
 void Game::mainloop(){
   m_logger->log("Running mainloop.");
   init();
-  
   bool game_running = true;
   while(game_running){
     char input =  m_ui->get_input();

@@ -29,7 +29,20 @@ Ui::~Ui(){
   delete m_logger;
 }
 
+void Ui::create_window(int px, int py, int sizex, int sizey, std::string id){
+  if(m_windows.count(id) != 0){
+    wrefresh(m_windows[id]);
+    delwin(m_windows[id]);
+  }
 
+  WINDOW * win;
+  win = newwin(sizey, sizex, py, px);
+  scrollok(win, false);
+  wrefresh(win);
+  m_windows[id] = win;
+}
+
+/*
 void Ui::create_window(int px, int py, int sizex, int sizey, std::string id){
   if(m_windows.count(id) != 0){
     wrefresh(m_windows[id]);
@@ -49,7 +62,7 @@ void Ui::create_window(int px, int py, int sizex, int sizey, std::string id){
   wrefresh(win);
   m_windows[id] = win;
 }
-
+*/
 void Ui::create_window_empty(int px, int py, int sizex, int sizey, std::string id){
   if(m_windows.count(id) != 0){
     wrefresh(m_windows[id]);
@@ -60,9 +73,45 @@ void Ui::create_window_empty(int px, int py, int sizex, int sizey, std::string i
   box(win, 0, 0);
   wrefresh(win);
   m_windows[id] = win;
+  scrollok(win, false);
 }
 
+void Ui::create_window_scroll(int px, int py, int sizex, int sizey, std::string id){
+  if(m_windows.count(id) != 0){
+    wrefresh(m_windows[id]);
+    delwin(m_windows[id]);
+  }
+  WINDOW * win;
+  win = newwin(sizey, sizex, py, px);
+  wrefresh(win);
+  scrollok(win, true);
+  m_windows[id] = win;
+}
 
+void Ui::print_line_at(int px, int py, std::string text, std::string id){
+  if(m_windows.count(id) != 0){
+    mvwprintw(m_windows[id], px, py, text.c_str());
+  }else{
+    m_logger->log("In print_line_at no window named " + id + "found.");
+  }
+}
+
+void Ui::print_line(std::string text, std::string id){
+  if(m_windows.count(id) != 0){
+    scroll(m_windows[id]);
+  int ymax = 0;
+  int xmax = 0;
+  getmaxyx(m_windows[id], ymax, xmax);
+  //int xmin = 0;
+  //int ymin = 0;
+  //getbegyx(m_windows[id], ymin, xmin);
+  mvwprintw(m_windows[id], ymax-1, 0, text.c_str());
+  wrefresh(m_windows[id]);
+  }else{
+    m_logger->log("In print_line, no window named " + id + " found.");
+  }
+}
+/*
 void Ui::print_line(std::string text, std::string id){
   if(m_windows.count(id+m_scrollending) != 0){
     wbkgd(m_windows[id+m_scrollending], COLOR_PAIR(1));
@@ -82,7 +131,7 @@ void Ui::print_line(std::string text, std::string id){
     m_logger->log("No window named " + id);
   }
 }
-
+*/
 void Ui::print_pos(std::string text, std::string id, int px, int py){
   if(m_windows.count(id+m_scrollending) != 0){
     scroll(m_windows[id+m_scrollending]);

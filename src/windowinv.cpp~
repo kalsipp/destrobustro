@@ -1,0 +1,7 @@
+#include "windowinv.hpp"
+
+Windowinv::Windowinv(){
+}
+
+Windowinv::~Windowinv(){
+}

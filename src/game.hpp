@@ -1,3 +1,5 @@
+#pragma once
+
 #include <iostream>
 #include <string>
 #include <vector>
@@ -7,6 +9,8 @@
 #include "logger.hpp"
 #include "ui.hpp"
 #include "pixel.hpp"
+#include "windowinfo.hpp"
+#include "windowinv.hpp"
 class Game{
 public:
   Game();
