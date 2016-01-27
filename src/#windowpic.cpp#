@@ -53,8 +53,8 @@ void Windowpic::print(){
     s+="\033[0m";
     cursorpos(sx, sy);
     sy++;
-    //m_ui->print_line_at(sx, sy, s, "windowpic");
-    std::cout << s;
+    m_ui->print_line_at(sx, sy, s, "windowpic");
+    //std::cout << s;
   }
   hide_cursor();
   //s.pop_back();

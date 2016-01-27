@@ -24,6 +24,10 @@ private:
   int m_cols;
   int m_colsd;
   Ui * m_ui;
+  Windowinfo * m_infowin = nullptr;
+  Windowinv * m_invwin = nullptr;
+  Windowpic * m_picwin = nullptr;
+  
   std::string m_inventoryid = "inventory";
   std::string m_infoid = "info";
 };

@@ -1,5 +1,5 @@
 #include "windowinfo.hpp"
-
+#include <cassert>
 Windowinfo::Windowinfo(Ui * ui, int px, int py, int sizex, int sizey){
   m_ui = ui;
   m_px = px;
@@ -15,4 +15,21 @@ Windowinfo::Windowinfo(Ui * ui, int px, int py, int sizex, int sizey){
 
 Windowinfo::~Windowinfo(){
   
+}
+
+
+void Windowinfo::print(std::string text){
+  m_history.push_back(text);
+  if(m_history.size() > m_sizey-2){
+    m_history.erase(m_history.begin());
+  }
+  int x = 0;
+  int y = 0;
+  std::string clearer = "                              ";//Todo Make this nicer
+  for(auto i = m_history.begin(); i != m_history.end(); ++i){
+    m_ui->print_line_at(x,y, clearer, m_id);
+    m_ui->print_line_at(x,y,*i, m_id);
+    ++y;
+  }
+
 }

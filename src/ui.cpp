@@ -7,13 +7,8 @@ Ui::Ui(){
   start_color();
   //use_default_colors();
   refresh();
-  //if(!has_colors())assert(false);
-  init_pair(1, COLOR_RED, COLOR_BLUE);
-  attron(COLOR_PAIR(1));
-  
-  //int c = colors();
-  //m_logger->log("I can support " + std::to_string(c)); 
-  //raw(); //Line buffering disabled
+  //init_pair(1, COLOR_RED, COLOR_BLUE);
+  //attron(COLOR_PAIR(1));
   keypad(stdscr, true); //Get f1, f2 etc..
   cbreak();
   noecho();
@@ -42,27 +37,6 @@ void Ui::create_window(int px, int py, int sizex, int sizey, std::string id){
   m_windows[id] = win;
 }
 
-/*
-void Ui::create_window(int px, int py, int sizex, int sizey, std::string id){
-  if(m_windows.count(id) != 0){
-    wrefresh(m_windows[id]);
-    delwin(m_windows[id]);
-    if(m_windows.count(id+m_scrollending) != 0){
-      wrefresh(m_windows[id+m_scrollending]);
-      delwin(m_windows[id + m_scrollending]);
-    }
-  }
-  WINDOW * win;
-  win = newwin(sizey, sizex, py, px);
-  WINDOW * scrollwin = newwin(sizey-2, sizex-2, py+1, px+1);
-  scrollok(scrollwin, true);
-  // wrefresh(win);
-  m_windows[id+m_scrollending] = scrollwin;
-  box(win, 0, 0);
-  wrefresh(win);
-  m_windows[id] = win;
-}
-*/
 void Ui::create_window_empty(int px, int py, int sizex, int sizey, std::string id){
   if(m_windows.count(id) != 0){
     wrefresh(m_windows[id]);
@@ -89,8 +63,17 @@ void Ui::create_window_scroll(int px, int py, int sizex, int sizey, std::string 
 }
 
 void Ui::print_line_at(int px, int py, std::string text, std::string id){
+  
+  /*
+  if(id == "windowpic"){
+    mvprintw(py, px, text.c_str());
+    refresh();
+    return;
+  }
+  */
+  
   if(m_windows.count(id) != 0){
-    m_logger->log("Attemping to print at px:" + std::to_string(px)+ " py:"+ std::to_string(py) + ".");
+    m_logger->log("Attemping to print " + text + " at px:" + std::to_string(px)+ " py:"+ std::to_string(py) + ".");
     int k = mvwprintw(m_windows[id], py, px, text.c_str());
     wrefresh(m_windows[id]);
     m_logger->log(std::to_string(k));
