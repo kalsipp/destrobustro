@@ -7,7 +7,7 @@ Windowpic::Windowpic(Ui * ui, int px, int py, int sizex, int sizey){
   m_sizex = sizex;
   m_sizey = sizey;
   m_ui->create_window_empty(m_px, m_py, m_sizex, m_sizey, "windowpic");
-  m_img = new Img_container("img_output");
+  m_img = new Img_container("img_output.img");
 }
 
 Windowpic::~Windowpic(){
