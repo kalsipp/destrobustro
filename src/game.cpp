@@ -20,21 +20,31 @@ void Game::init(){
   m_cols = w.ws_col;
   m_colsd = w.ws_col*0.5f;
   m_ui->create_window_empty(0, 0, m_cols, m_rows, "outer"); 
-  int infosizey = 8;
-  int infopy = m_rows-infosizey-1;
-  int infopx = 2;
-  int infosizex = m_cols-4;
-  Windowinv winv(m_ui, infopx, infopy, infosizex, infosizey);
+  
+  int mmsizey = 20;
+  int mmsizex = 40;
+  int mmpy = 1;
+  int mmpx = m_cols - mmsizex-2;
+  m_ui->create_window_empty(mmpx, mmpy, mmsizex, mmsizey, "minimap");
+  m_ui->print_line_at(1, 1,"Minimap", "minimap");
 
-  int inventorysizex = 20; 
-  int inventorypx = m_cols-inventorysizex-2;
-  int inventorypy = 1;
-  int inventorysizey = m_rows-infosizey-2;
-  Windowinfo winfo(m_ui, inventorypx, inventorypy, inventorysizex, inventorysizey);
+
+  int infosizex = 40; 
+  int infopx = m_cols-infosizex-2;
+  int infopy = mmpy+mmsizey;
+  int infosizey = m_rows-1-infopy;  
+  Windowinfo winfo(m_ui, infopx, infopy, infosizex, infosizey);
+
+  int invsizey = 8;
+  int invpy = m_rows-invsizey-1;
+  int invpx = 2;
+  int invsizex = m_cols-6-infosizex;
+  Windowinv winv(m_ui, invpx, invpy, invsizex, invsizey);
+  
   int imagepx = 2;
   int imagepy = 1;
-  int imagesizex = m_cols-inventorysizex-6;
-  int imagesizey = m_rows-infosizey-2;
+  int imagesizex = m_cols-infosizex-6;
+  int imagesizey = m_rows-invsizey-2;
   Windowpic winpic(m_ui, imagepx, imagepy, imagesizex, imagesizey);
   winpic.print();
   //m_ui->create_window(imagepx, imagepy, imagesizex, imagesizey, "image");

@@ -11,9 +11,9 @@ Img_container::Img_container(std::string filename){
 }
 void Img_container::init_img(std::string filename){
   img_to_str_vector(filename, img_txt);
-  std::cout << img_txt.size() << std::endl;
-  std::cout << img_txt[0].size() << std::endl;
-  std::cout << img_txt[10][0].get_str() << std::endl;
+  // std::cout << img_txt.size() << std::endl;
+  //std::cout << img_txt[0].size() << std::endl;
+  //std::cout << img_txt[10][0].get_str() << std::endl;
 }
 const std::vector<std::vector<Pixel>> & Img_container::get_img()const{
   return img_txt;

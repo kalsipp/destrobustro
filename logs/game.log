@@ -1,4 +1,4 @@
-0.000267073s: Main gameloop created.
-0.0105981s: Running mainloop.
-0.0108024s: Running init
-0.0688419s: init done
+4.336e-05s: Main gameloop created.
+0.0003123s: Running mainloop.
+0.000330507s: Running init
+0.00453534s: init done

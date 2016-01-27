@@ -1,7 +1,9 @@
-0.000100502s: Ui created.
-0.0244148s: Attemping to print at px:0 py:0.
-0.0247592s: 0
-0.0248813s: Attemping to print at px:0 py:0.
-0.0250727s: 0
-0.0251637s: Attemping to print at px:0 py:4.
-0.0253899s: 0
+1.4808e-05s: Ui created.
+0.000680231s: Attemping to print at px:1 py:1.
+0.000715287s: 0
+0.000932553s: Attemping to print at px:0 py:0.
+0.000954789s: 0
+0.000965146s: Attemping to print at px:0 py:0.
+0.000977835s: 0
+0.000986884s: Attemping to print at px:0 py:4.
+0.00100173s: 0
