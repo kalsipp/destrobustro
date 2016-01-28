@@ -12,7 +12,10 @@ Windowpic::Windowpic(Ui * ui, int px, int py, int sizex, int sizey){
   Pixel pix;
   p.resize(m_sizex/2, pix);
   m_grid.resize(m_sizey, p);
-  
+std::cout << "The size is:" << std::endl;
+std::cout << "X: " << m_grid[0].size() << std::endl;
+std::cout << "Y: " << m_grid.size() << std::endl;
+assert(false);
 }
 
 Windowpic::~Windowpic(){
@@ -32,20 +35,19 @@ void Windowpic::load_image(int px, int py, std::string filename){
   //m_img->init_img(filename);
   //std::vector<std::vector<Pixel>> grid = init_img.get_img();
   //for(int y = 0; y < 
-  //for(
 }
 
 void Windowpic::print(){
   std::vector<std::vector<Pixel>> grid = m_img->get_img();
   int sx = m_px+1;
   int sy = m_py+1;
-  int mx = m_sizex/2 -2;
-  int my = m_sizey-3;
+  unsigned int mx = m_sizex/2 -2;
+  unsigned int my = m_sizey-3;
   cursorpos(sx, sy);
   std::string s;
-  for(int y = 0; y < grid.size(); ++y){
+  for(unsigned int y = 0; y < grid.size(); ++y){
     std::string s;
-    for(int x = 0; x < grid[y].size(); ++x){
+    for(unsigned int x = 0; x < grid[y].size(); ++x){
       if(y <= my && x <= mx){
         s+= grid[y][x].get_str();
       }

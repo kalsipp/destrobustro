@@ -20,7 +20,7 @@ Windowinfo::~Windowinfo(){
 
 void Windowinfo::print(std::string text){
   m_history.push_back(text);
-  if(m_history.size() > m_sizey-2){
+  if((int)m_history.size() > m_sizey-2){
     m_history.erase(m_history.begin());
   }
   int x = 0;

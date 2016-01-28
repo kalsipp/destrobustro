@@ -64,13 +64,11 @@ void Ui::create_window_scroll(int px, int py, int sizex, int sizey, std::string 
 
 void Ui::print_line_at(int px, int py, std::string text, std::string id){
   
-  /*
   if(id == "windowpic"){
     mvprintw(py, px, text.c_str());
-    refresh();
+    wrefresh(m_windows[id]);
     return;
   }
-  */
   
   if(m_windows.count(id) != 0){
     m_logger->log("Attemping to print " + text + " at px:" + std::to_string(px)+ " py:"+ std::to_string(py) + ".");

@@ -1,5 +1,5 @@
 #include "map.hpp"
-
+#include <cassert> //debug
 
 Map::Map(){
   
@@ -28,8 +28,31 @@ void Map::generate_map_from_file(std::string filename){
   file.close();
 }
 
+const std::map<std::pair<int, int>, char>& Map::get_map(){
+  /*
+  for(auto i = m_map.begin(); i != m_map.end(); ++i){
+    std::cout << (*i).second << std::endl;
+  }
+  assert(false);
+  */
+  return m_map;
+} 
+
+bool Map::space_free(int px, int py){
+  std::pair<int, int> k (px, py);
+  if(m_map.count(k) != 0){
+    if(m_map[k] == '#'){
+      return false;
+    }
+  }
+  return true;
+}
 
 void Map::make_wall(int px, int py){
+  std::pair<int, int> k(px, py);
+  m_map[k] = '#';
 }
 void Map::make_floor(int px, int py){
+  std::pair<int, int> k(px, py);
+  m_map[k] = '.';
 }

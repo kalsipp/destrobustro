@@ -12,6 +12,7 @@
 #include "windowinfo.hpp"
 #include "windowinv.hpp"
 #include "windowpic.hpp"
+#include "minimap.hpp"
 class Game{
 public:
   Game();
@@ -27,7 +28,8 @@ private:
   Windowinfo * m_infowin = nullptr;
   Windowinv * m_invwin = nullptr;
   Windowpic * m_picwin = nullptr;
-  
+  Minimap * m_minimap = nullptr;
+  Map * m_map = nullptr;
   std::string m_inventoryid = "inventory";
   std::string m_infoid = "info";
 };
