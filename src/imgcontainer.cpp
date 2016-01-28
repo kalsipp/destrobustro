@@ -36,9 +36,9 @@ void Img_container::img_to_str_vector(std::string filename, std::vector<std::vec
       //Go through this row, chop it up into induvidual "pixels" and add them to their proper place in the vectorvector
       std::string s;
       while(tempstr[0] != '@'){
-	if(tempstr[0] != '\n')s+= tempstr[0];
-	if(tempstr.length() == 0) break;
-	tempstr.erase(tempstr.begin());
+        if(tempstr[0] != '\n')s+= tempstr[0];
+        if(tempstr.length() == 0) break;
+        tempstr.erase(tempstr.begin());
       }
       Pixel p(s);
       tempvec.push_back(p);

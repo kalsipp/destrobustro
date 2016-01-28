@@ -64,12 +64,6 @@ void Ui::create_window_scroll(int px, int py, int sizex, int sizey, std::string 
 
 void Ui::print_line_at(int px, int py, std::string text, std::string id){
   
-  if(id == "windowpic"){
-    mvprintw(py, px, text.c_str());
-    wrefresh(m_windows[id]);
-    return;
-  }
-  
   if(m_windows.count(id) != 0){
     m_logger->log("Attemping to print " + text + " at px:" + std::to_string(px)+ " py:"+ std::to_string(py) + ".");
     int k = mvwprintw(m_windows[id], py, px, text.c_str());
@@ -86,36 +80,13 @@ void Ui::print_line(std::string text, std::string id){
   int ymax = 0;
   int xmax = 0;
   getmaxyx(m_windows[id], ymax, xmax);
-  //int xmin = 0;
-  //int ymin = 0;
-  //getbegyx(m_windows[id], ymin, xmin);
   mvwprintw(m_windows[id], ymax-1, 0, text.c_str());
   wrefresh(m_windows[id]);
   }else{
     m_logger->log("In print_line, no window named " + id + " found.");
   }
 }
-/*
-void Ui::print_line(std::string text, std::string id){
-  if(m_windows.count(id+m_scrollending) != 0){
-    wbkgd(m_windows[id+m_scrollending], COLOR_PAIR(1));
-    scroll(m_windows[id+m_scrollending]);
-    int x_max = 0;
-    int y_max = 0;
-    getmaxyx(m_windows[id+m_scrollending], y_max, x_max);
-    m_logger->log(std::to_string(x_max) + " " + std::to_string(y_max));
-    int x_min = 0;
-    int y_min = 0;
-    getbegyx(m_windows[id+m_scrollending], y_min, x_min);
-    m_logger->log(std::to_string(x_min) + " " + std::to_string(y_min));
-    //wprint(m_window[id]);
-    mvwprintw(m_windows[id+m_scrollending], y_max-1, 1, text.c_str());
-    wrefresh(m_windows[id+m_scrollending]);
-  }else{
-    m_logger->log("No window named " + id);
-  }
-}
-*/
+
 void Ui::print_pos(std::string text, std::string id, int px, int py){
   if(m_windows.count(id+m_scrollending) != 0){
     scroll(m_windows[id+m_scrollending]);

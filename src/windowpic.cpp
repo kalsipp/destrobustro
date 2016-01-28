@@ -7,15 +7,16 @@ Windowpic::Windowpic(Ui * ui, int px, int py, int sizex, int sizey){
   m_sizex = sizex;
   m_sizey = sizey;
   m_ui->create_window_empty(m_px, m_py, m_sizex, m_sizey, "windowpic");
-  m_img = new Img_container("img_output.img");
+  m_img = new Img_container("media/screen.img");
+  //m_img = new Img_container("img_output.img");
   std::vector<Pixel> p;
   Pixel pix;
   p.resize(m_sizex/2, pix);
   m_grid.resize(m_sizey, p);
-std::cout << "The size is:" << std::endl;
-std::cout << "X: " << m_grid[0].size() << std::endl;
-std::cout << "Y: " << m_grid.size() << std::endl;
-assert(false);
+//std::cout << "The size is:" << std::endl;
+//std::cout << "X: " << m_grid[0].size() << std::endl;
+//std::cout << "Y: " << m_grid.size() << std::endl;
+//assert(false);
 }
 
 Windowpic::~Windowpic(){
@@ -44,21 +45,35 @@ void Windowpic::print(){
   unsigned int mx = m_sizex/2 -2;
   unsigned int my = m_sizey-3;
   cursorpos(sx, sy);
-  std::string s;
-  for(unsigned int y = 0; y < grid.size(); ++y){
+  /*
+  for(auto y = grid.begin(); y != grid.end(); ++y){
     std::string s;
-    for(unsigned int x = 0; x < grid[y].size(); ++x){
-      if(y <= my && x <= mx){
-        s+= grid[y][x].get_str();
-      }
+    for(auto x = y->begin(); x != y->end(); ++x){
+      s += x->get_str();
     }
-    s+="\033[0m";
+    s+= "\033[0m";
+    std::cout << s;
+    cursorpos(sx, sy);
+    ++sy;
+    }
+  */
+  for(unsigned int y = 0; y < grid.size(); ++y){
+    std::string s = "";
+    for(unsigned int x = 0; x < grid[y].size(); ++x){
+      //if(y <= my && x <= mx){
+        s+= grid[y][x].get_str();
+        //}
+    }
+    //s+="\033[0m";
     cursorpos(sx, sy);
     sy++;
+    
     //m_ui->print_line_at(sx, sy, s, "windowpic");
-    std::cout << s;
+    std::cout << s;//.length();
+    std::cout.flush();
   }
-  hide_cursor();
+  //assert(false);
+  //hide_cursor();
   //s.pop_back();
   //std::cout << s;
 }
