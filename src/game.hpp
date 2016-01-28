@@ -13,6 +13,7 @@
 #include "windowinv.hpp"
 #include "windowpic.hpp"
 #include "minimap.hpp"
+#include "music.hpp"
 class Game{
 public:
   Game();
@@ -30,6 +31,7 @@ private:
   Windowpic * m_picwin = nullptr;
   Minimap * m_minimap = nullptr;
   Map * m_map = nullptr;
+  Music * m_music = nullptr;
   std::string m_inventoryid = "inventory";
   std::string m_infoid = "info";
 };

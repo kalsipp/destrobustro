@@ -4,7 +4,8 @@ Ui::Ui(){
   m_logger = new Logger("Ui");
   m_logger->log("Ui created.");
   initscr(); //Start curses mode
-  start_color();
+  curs_set(0);
+  //start_color();
   //use_default_colors();
   refresh();
   //init_pair(1, COLOR_RED, COLOR_BLUE);
@@ -18,7 +19,7 @@ Ui::Ui(){
 Ui::~Ui(){
   m_logger->log("Ui deleted.");
   for(auto i = m_windows.begin(); i != m_windows.end(); ++i){
-    delwin((*i).second);
+     delwin((*i).second);
   }
   endwin();
   delete m_logger;

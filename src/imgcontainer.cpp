@@ -26,6 +26,8 @@ void Img_container::set_pixel(const Pixel & p, int px, int py){
 }
 
 void Img_container::img_to_str_vector(std::string filename, std::vector<std::vector<Pixel>> & im_text_ref){
+  if(im_text_ref.size() > 0)im_text_ref[0].resize(0);
+  im_text_ref.resize(0);
   std::ifstream file(filename.c_str());
   if(file == 0)return;
   std::vector<Pixel> tempvec;
