@@ -72,7 +72,9 @@ void Game::mainloop(){
   int dirx[4] = {0, -1, 0, 1};
   int diry[4] = {1, 0, -1, 0};
   m_minimap->paint(x, y);
-  m_picwin->print(x,y, direction);
+  m_picwin->print(x,y, direction, m_infowin);
+  m_map->discover(x, y);
+  int mapsize = m_map->get_map().size();
   while(game_running){
     int dx = 0;
     int dy = 0;
@@ -98,33 +100,33 @@ void Game::mainloop(){
     if(input == 'p' ){
         game_running = false;
     }else if(input == 's'){
-      m_infowin->print("Walking backwards");
+      //m_infowin->print("Walking backwards");
       dy = diry[direction];
       dx = dirx[direction];
     }else if(input == 'w'){
-      m_infowin->print("Walking forward");
+      //m_infowin->print("Walking forward");
       int tmp = direction +2;
       if(tmp > 3) tmp -=4;
       dy = diry[tmp];
       dx = dirx[tmp];
     }else if(input == 'd'){
-      m_infowin->print("Turning right");
+      //m_infowin->print("Turning right");
       //dx = 1;
       direction += 1;
       if(direction > 3) direction = 0;
     }else if(input == 'a'){
-      m_infowin->print("Turning left");
+      //m_infowin->print("Turning left");
       direction -= 1;
       if(direction < 0) direction = 3;
-    }else if(input == 'q'){
-      m_infowin->print("Walking right");
+    }else if(input == 'e'){
+      //m_infowin->print("Walking right");
       int tmp = direction +3;
       if(tmp > 3) tmp-=4;
       dx = dirx[tmp];
       dy = diry[tmp];
       //dx =-1;
-    }else if(input == 'e'){
-      m_infowin->print("Walking left");
+    }else if(input == 'q'){
+      //m_infowin->print("Walking left");
       int tmp = direction +1;
       if(tmp > 3) tmp -= 4;
       dx = dirx[tmp];
@@ -136,17 +138,11 @@ void Game::mainloop(){
     }else{
       m_infowin->print("That space is occupied");
     }
-    if(direction == 0){
-      m_infowin->print("Facing north");
-    }else if(direction == 1){
-      m_infowin->print("Facing east");
-    }else if(direction == 2){
-      m_infowin->print("Facing south");
-    }else if(direction == 3){
-      m_infowin->print("Facing west");
-    }
-    m_picwin->print(x,y,direction);
+    m_map->discover(x, y);
+    m_picwin->print(x,y,direction, m_infowin);
     m_minimap->paint(x, y);
+    m_infowin -> print("x: " + std::to_string(x) + " y: " + std::to_string(y));
+    m_infowin -> print ("Disovered " + std::to_string(m_map->m_spaces_discovered) + "/" + std::to_string(mapsize) + " spaces.");
     //m_ui->print_line("Inventory here", m_inventoryid);
     //m_ui->print_line("Info here", m_infoid);
     

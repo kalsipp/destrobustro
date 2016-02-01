@@ -1,0 +1,14 @@
+ /*
+    0. left
+    1. right
+    2. forward left
+    3. forward
+    4. forward right   
+    5. forward forward left
+    6. forward forward 
+    7. forward forward right
+    8. forward forward forward left
+    9. forward forward forward
+   10. forward forward forward right
+     */
+ 

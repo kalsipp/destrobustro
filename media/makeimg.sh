@@ -1,6 +1,8 @@
 #!/bin/bash
 
 python img_conv_stolen.py left.jpg
-python img_conv_stolen.py right.jpg
-python img_conv_stolen.py tunnel.jpg
-python img_conv_stolen.py wall.jpg
+for i in {0..17}
+do
+   echo "Welcome $i times"
+   python img_conv_stolen.py path$i.jpg
+done

@@ -31,10 +31,15 @@ void Minimap::paint(int cx, int cy){
       if(x == 0 && y == 0){
         row += '@';
       }
-      else if(map.count(k) != 0){
-        row += map[k];
-      }else{
-        row += '-';
+      else if(m_map->is_discovered(cx+x, cy+y)){
+        if(map.count(k) != 0){
+          row += map[k];
+        }else{
+          row += '-';
+        }
+      }
+      else{
+        row += '~';
       }
     }
     m_ui->print_line_at(1, y+m_sizey/2, row, m_id);

@@ -5,6 +5,8 @@
 class Music{
 public:
   Music();
+  ~Music();
   std::thread t;
+
   //void play();
 };
