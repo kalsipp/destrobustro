@@ -11,12 +11,12 @@ public:
   Windowpic(Ui * ui, Map * map, int px, int py, int sizex, int sizey);
   ~Windowpic();
   void print(int px, int py, int direction, Windowinfo * wininfo );
+private:
   void cursorpos(int, int);
   void hide_cursor();
   void load_image(int, int, std::string filename);
   void clear_image();
   void choose_image(int, int, int, Windowinfo * wininfo);
-  void choose_image_split(int, int, int, Windowinfo *);
   Ui* m_ui = nullptr;
   Map* m_map = nullptr;
   int m_px = 0;

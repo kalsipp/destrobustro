@@ -65,8 +65,6 @@ void Windowpic::print(int px, int py, int direction, Windowinfo * wininfo){
   std::vector<std::vector<Pixel>> grid = m_img->get_img();
   int sx = m_px+1;
   int sy = m_py+1;
-  unsigned int mx = m_sizex/2 -2;
-  unsigned int my = m_sizey-3;
   cursorpos(sx, sy);
   for(unsigned int y = 0; y < grid.size(); ++y){
     std::string s = "";
@@ -84,55 +82,6 @@ void Windowpic::print(int px, int py, int direction, Windowinfo * wininfo){
 }
 
 
-void Windowpic::choose_image_split(int px, int py, int dir, Windowinfo * wininfo){
-  
-  std::vector<std::vector<int>> paths;
-  std::vector<int> p = {1};
-  paths.push_back(p);
-  p = {3};
-  paths.push_back(p);
-  p = {1, 2};
-  paths.push_back(p);
-  p = {2};
-  paths.push_back(p);
-  p = {2,3};
-  paths.push_back(p);
-  p = {2,2,1};
-  paths.push_back(p);
-  p = {2,2};
-  paths.push_back(p);
-  p = {2,2,3};
-  paths.push_back(p);
-  p = {2,2,2,1};
-  paths.push_back(p);
-  p = {2,2,2};
-  paths.push_back(p);
-  p = {2,2,2,3};
-  paths.push_back(p);
-  std::cout << paths.size() << std::endl;
-  assert(paths.size() == 11);
-  
-  //Now check all of these spaces if they are occupied by a wall or not
-  std::vector<bool> space = {false, false, false, false, false, false, false, false, false, false, false};
-  //unsigned int spaces = 0;
-  int dx[4] = {0, -1, 0, 1};
-  int dy[4] = {1, 0, -1, 0};  
-  int sp = 0;
-  for(auto i = paths.begin(); i != paths.end(); ++i){
-    int tx = px;
-    int ty = py;
-    for(auto j = i->begin(); j != i->end(); ++j){
-      int temp = dir+(*j);
-      if(temp > 3) temp -=4;
-      tx += dx[temp];
-      ty += dy[temp];
-    }
-    space[sp] = m_map->space_free(tx, ty);
-    ++sp;
-  }
- 
-  
-}
 
 void Windowpic::choose_image(int px, int py, int dir, Windowinfo * wininfo){
   /*

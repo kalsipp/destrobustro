@@ -1,648 +1,292 @@
-4.7651e-05s: Main gameloop created.
-0.000670003s: Running mainloop.
-0.000690086s: Running init
-1.83956s: init done
-3.10529s: truct null not valid
-3.10538s: ot valid
-4.09576s: sic_string::_S_construct null not valid
-4.09588s: _S_construct null not valid
-4.60957s: truct null not valid
-4.60965s: ot valid
-5.13877s: truct null not valid
-5.13884s: ot valid
-5.70391s: truct null not valid
-5.70399s: ot valid
-6.46383s: truct null not valid
-6.4639s: ot valid
-6.95978s: sic_string::_S_construct null not valid
-6.96066s: _S_construct null not valid
-7.36299s: truct null not valid
-7.3631s: ot valid
-7.67758s: truct null not valid
-7.67766s: ot valid
-8.31009s: truct null not valid
-8.31016s: ot valid
-9.06571s: truct null not valid
-9.06578s: ot valid
-9.57521s: sic_string::_S_construct null not valid
-9.57529s: _S_construct null not valid
-9.98248s: sic_string::_S_construct null not valid
-9.98256s: _S_construct null not valid
-10.2918s: truct null not valid
-10.2919s: ot valid
-10.5885s: truct null not valid
-10.5886s: ot valid
-10.8645s: truct null not valid
-10.8645s: ot valid
-11.3177s: construct null not valid
-11.3178s: ll not valid
-11.6546s: sic_string::_S_construct null not valid
-11.6547s: _S_construct null not valid
-12.0102s: truct null not valid
-12.0103s: ot valid
-12.3241s: truct null not valid
-12.3242s: ot valid
-12.8665s: 
-12.8666s: g::_S_construct null not valid
-13.2216s: truct null not valid
-13.2216s: ot valid
-13.5456s: truct null not valid
-13.5457s: ot valid
-13.8721s: sic_string::_S_construct null not valid
-13.8722s: _S_construct null not valid
-14.1914s: truct null not valid
-14.1915s: ot valid
-14.6125s: truct null not valid
-14.6126s: ot valid
-15.0328s: truct null not valid
-15.0329s: ot valid
-15.6135s: truct null not valid
-15.6136s: ot valid
-16.2538s: truct null not valid
-16.2539s: ot valid
-16.6494s: truct null not valid
-16.6495s: ot valid
-17.2752s: truct null not valid
-17.2755s: ot valid
-17.5788s: truct null not valid
-17.5789s: ot valid
-17.8478s: truct null not valid
-17.8478s: ot valid
-18.1207s: truct null not valid
-18.1207s: ot valid
-18.3908s: truct null not valid
-18.3908s: ot valid
-18.7384s: truct null not valid
-18.7385s: ot valid
-19.324s: truct null not valid
-19.3241s: ot valid
-19.727s: truct null not valid
-19.7271s: ot valid
-20.0835s: truct null not valid
-20.0836s: ot valid
-20.3497s: truct null not valid
-20.3497s: ot valid
-20.9004s: truct null not valid
-20.9005s: ot valid
-21.2691s: truct null not valid
-21.2691s: ot valid
-21.5834s: truct null not valid
-21.5835s: ot valid
-22.3188s: truct null not valid
-22.3191s: ot valid
-22.7413s: sic_string::_S_construct null not valid
-22.7414s: _S_construct null not valid
-23.0659s: truct null not valid
-23.0659s: ot valid
-23.3839s: truct null not valid
-23.384s: ot valid
-23.7525s: sic_string::_S_construct null not valid
-23.7526s: _S_construct null not valid
-24.0584s: truct null not valid
-24.0585s: ot valid
-24.3414s: truct null not valid
-24.3415s: ot valid
-24.6319s: 
-24.6319s: g::_S_construct null not valid
-24.9112s: truct null not valid
-24.9112s: ot valid
-25.2196s: truct null not valid
-25.2197s: ot valid
-25.5539s: 
-25.554s: g::_S_construct null not valid
-25.8654s: truct null not valid
-25.8655s: ot valid
-26.1539s: truct null not valid
-26.154s: ot valid
-26.5395s: truct null not valid
-26.5396s: ot valid
-26.8048s: truct null not valid
-26.8048s: ot valid
-27.1471s: truct null not valid
-27.1471s: ot valid
-27.7128s: truct null not valid
-27.7129s: ot valid
-28.1224s: 
-28.1226s: g::_S_construct null not valid
-28.4393s: truct null not valid
-28.4394s: ot valid
-28.7523s: truct null not valid
-28.7524s: ot valid
-29.2345s: truct null not valid
-29.2346s: ot valid
-29.8077s: truct null not valid
-29.8078s: ot valid
-30.1718s: 
-30.1718s: g::_S_construct null not valid
-30.4681s: truct null not valid
-30.4682s: ot valid
-30.7875s: truct null not valid
-30.7876s: ot valid
-31.1068s: 
-31.1069s: g::_S_construct null not valid
-31.39s: truct null not valid
-31.3901s: ot valid
-31.7493s: truct null not valid
-31.7494s: ot valid
-32.0296s: sic_string::_S_construct null not valid
-32.0297s: _S_construct null not valid
-32.3429s: sic_string::_S_construct null not valid
-32.3432s: _S_construct null not valid
-32.6144s: truct null not valid
-32.6144s: ot valid
-32.8908s: truct null not valid
-32.8908s: ot valid
-33.1936s: sic_string::_S_construct null not valid
-33.1936s: _S_construct null not valid
-33.4671s: truct null not valid
-33.4671s: ot valid
-33.7433s: truct null not valid
-33.7433s: ot valid
-34.0951s: truct null not valid
-34.0952s: ot valid
-34.4366s: truct null not valid
-34.4367s: ot valid
-34.7641s: truct null not valid
-34.7642s: ot valid
-35.1486s: truct null not valid
-35.1487s: ot valid
-35.4421s: sic_string::_S_construct null not valid
-35.4422s: _S_construct null not valid
-35.7192s: truct null not valid
-35.7193s: ot valid
-35.997s: truct null not valid
-35.997s: ot valid
-36.3463s: sic_string::_S_construct null not valid
-36.3464s: _S_construct null not valid
-36.6173s: truct null not valid
-36.6173s: ot valid
-36.9436s: truct null not valid
-36.9436s: ot valid
-37.2536s: 
-37.2537s: g::_S_construct null not valid
-37.5342s: truct null not valid
-37.5343s: ot valid
-37.8711s: truct null not valid
-37.8712s: ot valid
-38.9757s: 
-38.9758s: g::_S_construct null not valid
-39.3029s: truct null not valid
-39.303s: ot valid
-39.6672s: truct null not valid
-39.6673s: ot valid
-40.0724s: truct null not valid
-40.0725s: ot valid
-40.473s: truct null not valid
-40.4731s: ot valid
-40.7793s: 
-40.7794s: g::_S_construct null not valid
-41.0511s: truct null not valid
-41.0512s: ot valid
-41.3942s: truct null not valid
-41.3943s: ot valid
-41.7951s: truct null not valid
-41.7951s: ot valid
-42.2249s: truct null not valid
-42.225s: ot valid
-42.535s: sic_string::_S_construct null not valid
-42.5351s: _S_construct null not valid
-42.8058s: truct null not valid
-42.8058s: ot valid
-43.1461s: truct null not valid
-43.1462s: ot valid
-43.5067s: truct null not valid
-43.5068s: ot valid
-43.9339s: truct null not valid
-43.9339s: ot valid
-44.2386s: sic_string::_S_construct null not valid
-44.2387s: _S_construct null not valid
-44.5182s: truct null not valid
-44.5182s: ot valid
-44.8451s: truct null not valid
-44.8452s: ot valid
-45.3145s: truct null not valid
-45.3146s: ot valid
-45.747s: truct null not valid
-45.7471s: ot valid
-46.0228s: 
-46.0228s: g::_S_construct null not valid
-46.3017s: truct null not valid
-46.3017s: ot valid
-46.5824s: truct null not valid
-46.5824s: ot valid
-46.9307s: truct null not valid
-46.9308s: ot valid
-47.3154s: truct null not valid
-47.3155s: ot valid
-47.6033s: sic_string::_S_construct null not valid
-47.6034s: _S_construct null not valid
-47.8855s: truct null not valid
-47.8855s: ot valid
-48.2414s: truct null not valid
-48.2415s: ot valid
-48.5765s: sic_string::_S_construct null not valid
-48.5766s: _S_construct null not valid
-48.8469s: truct null not valid
-48.847s: ot valid
-49.1897s: truct null not valid
-49.1898s: ot valid
-49.8707s: truct null not valid
-49.8708s: ot valid
-50.4352s: truct null not valid
-50.4353s: ot valid
-50.9518s: truct null not valid
-50.9519s: ot valid
-51.7365s: 
-51.7365s: g::_S_construct null not valid
-52.0528s: truct null not valid
-52.0529s: ot valid
-52.5015s: truct null not valid
-52.5015s: ot valid
-53.0908s: sic_string::_S_construct null not valid
-53.0908s: _S_construct null not valid
-53.388s: truct null not valid
-53.3881s: ot valid
-53.7825s: truct null not valid
-53.7826s: ot valid
-54.2822s: truct null not valid
-54.2823s: ot valid
-54.5921s: 
-54.5922s: g::_S_construct null not valid
-54.9035s: truct null not valid
-54.9036s: ot valid
-55.2458s: truct null not valid
-55.2459s: ot valid
-55.9633s: truct null not valid
-55.9634s: ot valid
-56.2539s: truct null not valid
-56.254s: ot valid
-56.7457s: 
-56.7458s: g::_S_construct null not valid
-57.0627s: truct null not valid
-57.0628s: ot valid
-57.4019s: truct null not valid
-57.402s: ot valid
-58.04s: truct null not valid
-58.0401s: ot valid
-58.3202s: sic_string::_S_construct null not valid
-58.3202s: _S_construct null not valid
-58.6073s: truct null not valid
-58.6074s: ot valid
-58.9489s: truct null not valid
-58.949s: ot valid
-59.4307s: truct null not valid
-59.4308s: ot valid
-59.7369s: truct null not valid
-59.7371s: ot valid
-60.3238s: 
-60.3238s: g::_S_construct null not valid
-60.623s: truct null not valid
-60.6231s: ot valid
-60.9472s: truct null not valid
-60.9473s: ot valid
-61.5078s: 
-61.5079s: g::_S_construct null not valid
-61.7826s: truct null not valid
-61.7826s: ot valid
-62.1099s: truct null not valid
-62.11s: ot valid
-62.4274s: truct null not valid
-62.4276s: ot valid
-62.7365s: truct null not valid
-62.7366s: ot valid
-63.0378s: truct null not valid
-63.0379s: ot valid
-63.6561s: sic_string::_S_construct null not valid
-63.6562s: _S_construct null not valid
-63.9326s: truct null not valid
-63.9326s: ot valid
-64.2644s: truct null not valid
-64.2645s: ot valid
-64.6149s: truct null not valid
-64.615s: ot valid
-64.9553s: truct null not valid
-64.9554s: ot valid
-65.2573s: truct null not valid
-65.2573s: ot valid
-65.6737s: sic_string::_S_construct null not valid
-65.6737s: _S_construct null not valid
-65.9498s: truct null not valid
-65.9498s: ot valid
-66.2659s: truct null not valid
-66.266s: ot valid
-66.5593s: truct null not valid
-66.5593s: ot valid
-66.8742s: 
-66.8743s: g::_S_construct null not valid
-67.1585s: truct null not valid
-67.1585s: ot valid
-67.4748s: truct null not valid
-67.4749s: ot valid
-67.8449s: truct null not valid
-67.845s: ot valid
-68.2449s: 
-68.245s: g::_S_construct null not valid
-68.569s: truct null not valid
-68.5691s: ot valid
-69.0225s: truct null not valid
-69.0225s: ot valid
-69.6996s: truct null not valid
-69.6996s: ot valid
-70.1756s: truct null not valid
-70.1757s: ot valid
-70.8055s: truct null not valid
-70.8056s: ot valid
-71.1402s: truct null not valid
-71.1402s: ot valid
-71.4541s: truct null not valid
-71.4542s: ot valid
-71.9792s: truct null not valid
-71.9793s: ot valid
-72.6307s: 
-72.6308s: g::_S_construct null not valid
-72.9241s: truct null not valid
-72.9241s: ot valid
-73.5453s: truct null not valid
-73.5454s: ot valid
-74.0035s: 
-74.0036s: g::_S_construct null not valid
-74.3354s: truct null not valid
-74.3355s: ot valid
-74.6521s: truct null not valid
-74.6522s: ot valid
-74.9302s: truct null not valid
-74.9303s: ot valid
-75.2116s: truct null not valid
-75.2116s: ot valid
-75.7268s: sic_string::_S_construct null not valid
-75.7269s: _S_construct null not valid
-75.9984s: truct null not valid
-75.9984s: ot valid
-76.3166s: truct null not valid
-76.3167s: ot valid
-77.0014s: sic_string::_S_construct null not valid
-77.0015s: _S_construct null not valid
-77.2792s: truct null not valid
-77.2792s: ot valid
-77.56s: truct null not valid
-77.56s: ot valid
-77.9542s: 
-77.9543s: g::_S_construct null not valid
-78.2732s: truct null not valid
-78.2732s: ot valid
-78.5643s: truct null not valid
-78.5643s: ot valid
-78.914s: 
-78.9141s: g::_S_construct null not valid
-79.1846s: truct null not valid
-79.1846s: ot valid
-79.4638s: truct null not valid
-79.4638s: ot valid
-79.7712s: sic_string::_S_construct null not valid
-79.7712s: _S_construct null not valid
-80.2755s: truct null not valid
-80.2756s: ot valid
-81.0336s: construct null not valid
-81.0337s: ll not valid
-81.8388s: sic_string::_S_construct null not valid
-81.8389s: _S_construct null not valid
-82.3938s: truct null not valid
-82.3945s: ot valid
-82.7259s: truct null not valid
-82.726s: ot valid
-83.009s: sic_string::_S_construct null not valid
-83.009s: _S_construct null not valid
-83.3331s: truct null not valid
-83.3332s: ot valid
-83.6978s: truct null not valid
-83.6979s: ot valid
-84.2251s: sic_string::_S_construct null not valid
-84.2252s: _S_construct null not valid
-84.5347s: truct null not valid
-84.5348s: ot valid
-84.9437s: truct null not valid
-84.9438s: ot valid
-85.3229s: 
-85.323s: g::_S_construct null not valid
-85.8166s: truct null not valid
-85.8167s: ot valid
-86.1133s: truct null not valid
-86.1134s: ot valid
-86.4174s: 
-86.4175s: g::_S_construct null not valid
-86.7008s: truct null not valid
-86.7008s: ot valid
-86.9907s: truct null not valid
-86.9907s: ot valid
-87.2668s: truct null not valid
-87.2668s: ot valid
-87.552s: truct null not valid
-87.552s: ot valid
-87.8371s: truct null not valid
-87.8371s: ot valid
-88.1193s: truct null not valid
-88.1193s: ot valid
-88.4015s: truct null not valid
-88.4015s: ot valid
-88.863s: sic_string::_S_construct null not valid
-88.8631s: _S_construct null not valid
-89.1462s: truct null not valid
-89.1462s: ot valid
-89.4242s: truct null not valid
-89.4243s: ot valid
-89.7091s: truct null not valid
-89.7091s: ot valid
-90.213s: 
-90.2131s: g::_S_construct null not valid
-90.4933s: truct null not valid
-90.4934s: ot valid
-90.7776s: truct null not valid
-90.7776s: ot valid
-91.0583s: truct null not valid
-91.0583s: ot valid
-91.4136s: 
-91.4137s: g::_S_construct null not valid
-91.7657s: truct null not valid
-91.7658s: ot valid
-92.1156s: truct null not valid
-92.1157s: ot valid
-92.3845s: truct null not valid
-92.3845s: ot valid
-92.6967s: truct null not valid
-92.6967s: ot valid
-93.0382s: sic_string::_S_construct null not valid
-93.0383s: _S_construct null not valid
-93.3144s: truct null not valid
-93.3144s: ot valid
-93.5892s: truct null not valid
-93.5892s: ot valid
-94.1154s: 
-94.1155s: g::_S_construct null not valid
-94.406s: truct null not valid
-94.4061s: ot valid
-94.7011s: truct null not valid
-94.7012s: ot valid
-95.2643s: truct null not valid
-95.2643s: ot valid
-95.7302s: truct null not valid
-95.7303s: ot valid
-96.0852s: 
-96.0853s: g::_S_construct null not valid
-96.3796s: truct null not valid
-96.3797s: ot valid
-96.6581s: truct null not valid
-96.6581s: ot valid
-97.0445s: 
-97.0446s: g::_S_construct null not valid
-97.3113s: 
-97.3113s: g::_S_construct null not valid
-97.5915s: truct null not valid
-97.5916s: ot valid
-98.7141s: construct null not valid
-98.7142s: ll not valid
-99.366s: ic_string::_S_construct null not valid
-99.3661s: S_construct null not valid
-101.055s: ic_string::_S_construct null not valid
-101.055s: S_construct null not valid
-101.786s: S_construct null not valid
-101.786s: null not valid
-102.06s: S_construct null not valid
-102.06s: null not valid
-102.336s: S_construct null not valid
-102.336s: null not valid
-102.609s: truct null not valid
-102.609s: ot valid
-102.89s: truct null not valid
-102.89s: ot valid
-103.17s: sic_string::_S_construct null not valid
-103.17s: _S_construct null not valid
-103.446s: truct null not valid
-103.446s: ot valid
-103.726s: truct null not valid
-103.726s: ot valid
-104.004s: truct null not valid
-104.004s: ot valid
-104.283s: truct null not valid
-104.283s: ot valid
-104.56s: truct null not valid
-104.56s: ot valid
-104.845s: truct null not valid
-104.845s: ot valid
-105.121s: truct null not valid
-105.121s: ot valid
-105.43s: truct null not valid
-105.43s: ot valid
-105.974s: truct null not valid
-105.974s: ot valid
-106.242s: truct null not valid
-106.242s: ot valid
-106.514s: truct null not valid
-106.514s: ot valid
-106.79s: truct null not valid
-106.79s: ot valid
-107.064s: truct null not valid
-107.064s: ot valid
-107.345s: truct null not valid
-107.345s: ot valid
-107.625s: truct null not valid
-107.625s: ot valid
-107.9s: truct null not valid
-107.9s: ot valid
-108.175s: sic_string::_S_construct null not valid
-108.175s: _S_construct null not valid
-108.449s: truct null not valid
-108.449s: ot valid
-108.731s: truct null not valid
-108.731s: ot valid
-109.011s: truct null not valid
-109.011s: ot valid
-109.285s: 
-109.285s: g::_S_construct null not valid
-109.56s: truct null not valid
-109.56s: ot valid
-109.844s: truct null not valid
-109.844s: ot valid
-110.124s: truct null not valid
-110.124s: ot valid
-110.401s: 
-110.401s: g::_S_construct null not valid
-110.681s: truct null not valid
-110.681s: ot valid
-110.963s: truct null not valid
-110.963s: ot valid
-111.24s: truct null not valid
-111.24s: ot valid
-111.516s: sic_string::_S_construct null not valid
-111.516s: _S_construct null not valid
-111.793s: truct null not valid
-111.793s: ot valid
-112.071s: truct null not valid
-112.071s: ot valid
-112.352s: truct null not valid
-112.352s: ot valid
-112.822s: sic_string::_S_construct null not valid
-112.822s: _S_construct null not valid
-113.092s: truct null not valid
-113.092s: ot valid
-113.396s: truct null not valid
-113.396s: ot valid
-113.671s: truct null not valid
-113.671s: ot valid
-114.048s: truct null not valid
-114.048s: ot valid
-114.344s: 
-114.344s: g::_S_construct null not valid
-114.62s: truct null not valid
-114.62s: ot valid
-114.905s: truct null not valid
-114.905s: ot valid
-115.205s: 
-115.205s: g::_S_construct null not valid
-115.486s: truct null not valid
-115.486s: ot valid
-115.768s: truct null not valid
-115.768s: ot valid
-116.057s: sic_string::_S_construct null not valid
-116.057s: _S_construct null not valid
-116.342s: truct null not valid
-116.342s: ot valid
-116.636s: truct null not valid
-116.636s: ot valid
-116.928s: 
-116.928s: g::_S_construct null not valid
-117.222s: truct null not valid
-117.222s: ot valid
-117.511s: truct null not valid
-117.511s: ot valid
-117.791s: truct null not valid
-117.791s: ot valid
-118.065s: 
-118.065s: g::_S_construct null not valid
-118.342s: truct null not valid
-118.342s: ot valid
-118.623s: truct null not valid
-118.623s: ot valid
-118.903s: truct null not valid
-118.903s: ot valid
-119.173s: sic_string::_S_construct null not valid
-119.173s: _S_construct null not valid
-119.451s: sic_string::_S_construct null not valid
-119.451s: _S_construct null not valid
-119.799s: truct null not valid
-119.799s: ot valid
-120.094s: truct null not valid
-120.094s: ot valid
-120.405s: truct null not valid
-120.406s: ot valid
-120.837s: truct null not valid
-120.837s: ot valid
-121.183s: truct null not valid
-121.184s: ot valid
-121.472s: truct null not valid
-121.472s: ot valid
-121.749s: truct null not valid
-121.749s: ot valid
-122.144s: truct null not valid
-122.144s: ot valid
-124.251s: Mainloop done.
-124.251s: Main gameloop killed.
+5.4645e-05s: Main gameloop created.
+0.000453922s: Running mainloop.
+0.000475121s: Running init
+1.83835s: init done
+17.7649s: truct null not valid
+17.765s: ot valid
+21.7778s: sic_string::_S_construct null not valid
+21.7778s: _S_construct null not valid
+24.2549s: truct null not valid
+24.255s: ot valid
+27.6933s: truct null not valid
+27.6934s: ot valid
+33.7762s: sic_string::_S_construct null not valid
+33.7763s: _S_construct null not valid
+35.6668s: 
+35.6669s: g::_S_construct null not valid
+36.5838s: truct null not valid
+36.5839s: ot valid
+39.4698s: truct null not valid
+39.4698s: ot valid
+40.8535s: construct null not valid
+40.8536s: ll not valid
+42.0286s: sic_string::_S_construct null not valid
+42.0287s: _S_construct null not valid
+43.4946s: 
+43.4946s: g::_S_construct null not valid
+44.1645s: truct null not valid
+44.1646s: ot valid
+44.8695s: sic_string::_S_construct null not valid
+44.8695s: _S_construct null not valid
+45.7989s: truct null not valid
+45.799s: ot valid
+49.8781s: truct null not valid
+49.8784s: ot valid
+51.0974s: 
+51.0975s: g::_S_construct null not valid
+51.4588s: truct null not valid
+51.4589s: ot valid
+52.0708s: truct null not valid
+52.0708s: ot valid
+52.8959s: 
+52.896s: g::_S_construct null not valid
+53.1634s: truct null not valid
+53.1634s: ot valid
+53.8072s: truct null not valid
+53.8073s: ot valid
+54.1347s: truct null not valid
+54.1348s: ot valid
+54.4967s: sic_string::_S_construct null not valid
+54.4968s: _S_construct null not valid
+54.7835s: truct null not valid
+54.7835s: ot valid
+55.2271s: truct null not valid
+55.2271s: ot valid
+55.6382s: truct null not valid
+55.6383s: ot valid
+56.0204s: truct null not valid
+56.0204s: ot valid
+56.4399s: truct null not valid
+56.44s: ot valid
+56.9154s: truct null not valid
+56.9154s: ot valid
+57.5455s: sic_string::_S_construct null not valid
+57.5455s: _S_construct null not valid
+58.0056s: truct null not valid
+58.0056s: ot valid
+58.5691s: truct null not valid
+58.5692s: ot valid
+59.0036s: sic_string::_S_construct null not valid
+59.0037s: _S_construct null not valid
+59.3004s: truct null not valid
+59.3005s: ot valid
+59.7468s: truct null not valid
+59.7468s: ot valid
+60.2144s: truct null not valid
+60.2145s: ot valid
+60.7088s: 
+60.7089s: g::_S_construct null not valid
+61.2584s: sic_string::_S_construct null not valid
+61.2584s: _S_construct null not valid
+61.5355s: truct null not valid
+61.5355s: ot valid
+61.9652s: 
+61.9653s: g::_S_construct null not valid
+62.3162s: truct null not valid
+62.3163s: ot valid
+62.6698s: truct null not valid
+62.6699s: ot valid
+63.3322s: sic_string::_S_construct null not valid
+63.3323s: _S_construct null not valid
+63.6119s: truct null not valid
+63.612s: ot valid
+64.0021s: truct null not valid
+64.0021s: ot valid
+65.9214s: 
+65.9215s: g::_S_construct null not valid
+66.4767s: truct null not valid
+66.4767s: ot valid
+66.9936s: truct null not valid
+66.9936s: ot valid
+67.4005s: sic_string::_S_construct null not valid
+67.4006s: _S_construct null not valid
+67.6683s: truct null not valid
+67.6683s: ot valid
+68.0009s: truct null not valid
+68.001s: ot valid
+68.3353s: truct null not valid
+68.3353s: ot valid
+68.9641s: truct null not valid
+68.9642s: ot valid
+69.348s: sic_string::_S_construct null not valid
+69.3481s: _S_construct null not valid
+69.6468s: truct null not valid
+69.6469s: ot valid
+69.9178s: truct null not valid
+69.9179s: ot valid
+70.3509s: truct null not valid
+70.3509s: ot valid
+70.6321s: 
+70.6322s: g::_S_construct null not valid
+70.9138s: truct null not valid
+70.9138s: ot valid
+71.1938s: truct null not valid
+71.1938s: ot valid
+71.4714s: truct null not valid
+71.4714s: ot valid
+71.8037s: truct null not valid
+71.8038s: ot valid
+72.0752s: truct null not valid
+72.0752s: ot valid
+72.3882s: truct null not valid
+72.3882s: ot valid
+72.6643s: sic_string::_S_construct null not valid
+72.6643s: _S_construct null not valid
+72.9315s: truct null not valid
+72.9315s: ot valid
+73.208s: truct null not valid
+73.208s: ot valid
+73.4809s: truct null not valid
+73.4809s: ot valid
+73.7572s: truct null not valid
+73.7572s: ot valid
+74.0322s: truct null not valid
+74.0323s: ot valid
+75.6733s: sic_string::_S_construct null not valid
+75.6733s: _S_construct null not valid
+76.1116s: truct null not valid
+76.1116s: ot valid
+76.3931s: truct null not valid
+76.3932s: ot valid
+76.6698s: truct null not valid
+76.6698s: ot valid
+76.9511s: truct null not valid
+76.9512s: ot valid
+77.235s: truct null not valid
+77.2351s: ot valid
+77.5102s: sic_string::_S_construct null not valid
+77.5102s: _S_construct null not valid
+77.7938s: truct null not valid
+77.7938s: ot valid
+78.0742s: truct null not valid
+78.0742s: ot valid
+78.3542s: truct null not valid
+78.3542s: ot valid
+78.6341s: truct null not valid
+78.6341s: ot valid
+78.9116s: truct null not valid
+78.9117s: ot valid
+79.1843s: 
+79.1843s: g::_S_construct null not valid
+79.4594s: truct null not valid
+79.4594s: ot valid
+80.3927s: 
+80.3928s: g::_S_construct null not valid
+80.6645s: 
+80.6645s: g::_S_construct null not valid
+81.1531s: sic_string::_S_construct null not valid
+81.1532s: _S_construct null not valid
+81.7761s: truct null not valid
+81.7762s: ot valid
+82.2235s: truct null not valid
+82.2235s: ot valid
+82.8498s: sic_string::_S_construct null not valid
+82.8499s: _S_construct null not valid
+83.1172s: truct null not valid
+83.1172s: ot valid
+83.3962s: truct null not valid
+83.3962s: ot valid
+83.7332s: 
+83.7333s: g::_S_construct null not valid
+84.0016s: truct null not valid
+84.0016s: ot valid
+84.2817s: truct null not valid
+84.2817s: ot valid
+84.6904s: truct null not valid
+84.6904s: ot valid
+85.2341s: sic_string::_S_construct null not valid
+85.2341s: _S_construct null not valid
+85.4985s: truct null not valid
+85.4985s: ot valid
+85.7754s: truct null not valid
+85.7755s: ot valid
+86.0479s: truct null not valid
+86.0479s: ot valid
+86.3208s: truct null not valid
+86.3208s: ot valid
+86.5943s: truct null not valid
+86.5943s: ot valid
+86.8722s: truct null not valid
+86.8722s: ot valid
+87.1477s: truct null not valid
+87.1477s: ot valid
+87.4231s: truct null not valid
+87.4231s: ot valid
+87.6986s: truct null not valid
+87.6987s: ot valid
+87.9738s: truct null not valid
+87.9738s: ot valid
+88.2456s: truct null not valid
+88.2457s: ot valid
+88.5197s: truct null not valid
+88.5197s: ot valid
+88.7908s: truct null not valid
+88.7908s: ot valid
+89.0636s: truct null not valid
+89.0636s: ot valid
+89.3388s: truct null not valid
+89.3389s: ot valid
+89.6111s: truct null not valid
+89.6111s: ot valid
+89.8806s: truct null not valid
+89.8806s: ot valid
+90.1477s: truct null not valid
+90.1477s: ot valid
+90.4208s: truct null not valid
+90.4208s: ot valid
+90.698s: truct null not valid
+90.6981s: ot valid
+90.9786s: truct null not valid
+90.9786s: ot valid
+91.2496s: truct null not valid
+91.2496s: ot valid
+91.521s: truct null not valid
+91.5211s: ot valid
+91.7928s: truct null not valid
+91.7928s: ot valid
+92.068s: truct null not valid
+92.068s: ot valid
+92.3411s: truct null not valid
+92.3412s: ot valid
+92.6112s: truct null not valid
+92.6112s: ot valid
+92.8843s: sic_string::_S_construct null not valid
+92.8843s: _S_construct null not valid
+93.1586s: truct null not valid
+93.1586s: ot valid
+93.4385s: truct null not valid
+93.4385s: ot valid
+93.7175s: truct null not valid
+93.7175s: ot valid
+93.9969s: truct null not valid
+93.9969s: ot valid
+94.2637s: truct null not valid
+94.2637s: ot valid
+94.5352s: sic_string::_S_construct null not valid
+94.5352s: _S_construct null not valid
+94.8099s: truct null not valid
+94.8099s: ot valid
+95.087s: truct null not valid
+95.087s: ot valid
+95.365s: truct null not valid
+95.365s: ot valid
+95.6358s: truct null not valid
+95.6358s: ot valid
+95.9098s: sic_string::_S_construct null not valid
+95.9098s: _S_construct null not valid
+96.1854s: truct null not valid
+96.1854s: ot valid
+96.4576s: truct null not valid
+96.4577s: ot valid
+96.7346s: truct null not valid
+96.7346s: ot valid
+97.0035s: truct null not valid
+97.0035s: ot valid
+97.2789s: 
+97.2789s: g::_S_construct null not valid
+97.5518s: truct null not valid
+97.5518s: ot valid
+97.8237s: truct null not valid
+97.8237s: ot valid
+111.264s: Mainloop done.
+111.264s: Main gameloop killed.

@@ -14,6 +14,7 @@ Game::~Game(){
   delete m_minimap;
   delete m_invwin;
   delete m_infowin;
+  delete m_music;
   //delete m_picwin;
 }
 
@@ -23,7 +24,6 @@ void Game::init(){
   ioctl(0, TIOCGWINSZ, &w);
   
   m_music = new Music();
-  //assert(false);
   m_map = new Map();
   m_map->generate_map_from_file("map.txt");
 
@@ -37,7 +37,6 @@ void Game::init(){
   int mmpy = 1;
   int mmpx = m_cols - mmsizex-2;
   m_minimap = new Minimap(m_ui, m_map, mmpx, mmpy, mmsizex, mmsizey);
-  //m_minimap->paint(0, 0);
   int invsizey = 8;
   int invpy = m_rows-invsizey-1;
   int invpx = 2;
@@ -56,15 +55,12 @@ void Game::init(){
   int imagesizex = m_cols-infosizex-6;
   int imagesizey = m_rows-invsizey-2;
   m_picwin = new Windowpic(m_ui,m_map,  imagepx, imagepy, imagesizex, imagesizey);
-  //m_picwin->print(0,0,0);
-  //m_ui->create_window(imagepx, imagepy, imagesizex, imagesizey, "image");
   m_logger->log("init done");
 }
 
 void Game::mainloop(){
   m_logger->log("Running mainloop.");
   init();
-  int counter = 0;
   bool game_running = true;
   int x = 1;
   int y = 2;
@@ -95,38 +91,32 @@ void Game::mainloop(){
     input = tolower(input);
     m_logger->log("Tolower input " + input);
     
-    //m_picwin->load_image(0,0,"media/wall.img");
-    
     if(input == 'p' ){
         game_running = false;
     }else if(input == 's'){
-      //m_infowin->print("Walking backwards");
+     
       dy = diry[direction];
       dx = dirx[direction];
     }else if(input == 'w'){
-      //m_infowin->print("Walking forward");
+     
       int tmp = direction +2;
       if(tmp > 3) tmp -=4;
       dy = diry[tmp];
       dx = dirx[tmp];
     }else if(input == 'd'){
-      //m_infowin->print("Turning right");
-      //dx = 1;
       direction += 1;
       if(direction > 3) direction = 0;
     }else if(input == 'a'){
-      //m_infowin->print("Turning left");
       direction -= 1;
       if(direction < 0) direction = 3;
     }else if(input == 'e'){
-      //m_infowin->print("Walking right");
       int tmp = direction +3;
       if(tmp > 3) tmp-=4;
       dx = dirx[tmp];
       dy = diry[tmp];
-      //dx =-1;
+    
     }else if(input == 'q'){
-      //m_infowin->print("Walking left");
+    
       int tmp = direction +1;
       if(tmp > 3) tmp -= 4;
       dx = dirx[tmp];
@@ -135,16 +125,17 @@ void Game::mainloop(){
     if(m_map->space_free(x+dx, y+dy)){
       x+=dx;
       y+=dy;
+      m_map->discover(x, y);
+      m_picwin->print(x,y,direction, m_infowin);
+      m_minimap->paint(x, y);
+      m_infowin -> print("x: " + std::to_string(x) + " y: " + std::to_string(y));
+      m_infowin -> print ("Disovered " + std::to_string(m_map->m_spaces_discovered) + "/" + std::to_string(mapsize) + " spaces.");
+   
     }else{
       m_infowin->print("That space is occupied");
     }
-    m_map->discover(x, y);
-    m_picwin->print(x,y,direction, m_infowin);
-    m_minimap->paint(x, y);
-    m_infowin -> print("x: " + std::to_string(x) + " y: " + std::to_string(y));
-    m_infowin -> print ("Disovered " + std::to_string(m_map->m_spaces_discovered) + "/" + std::to_string(mapsize) + " spaces.");
-    //m_ui->print_line("Inventory here", m_inventoryid);
-    //m_ui->print_line("Info here", m_infoid);
+    
+    
     
   }
 
